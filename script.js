@@ -1,4 +1,13 @@
  $(document).ready(function(){
+    
+    var typed = new Typed('.typed', {
+        strings: ['Hello','You can find weather Info here'],
+        smartBackspace: true,
+        typeSpeed: 100,
+        loop: true,
+      });
+
+
     $("#searchInput").on("keyup", function(e){
         var cityname = e.target.value
         const APIKey = "4e05fdf242fe14f1293521c0d09ba12c"
